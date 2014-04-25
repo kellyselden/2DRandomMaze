@@ -8,6 +8,7 @@
 #include "GLPanel.h"
 #include "GUI.h"
 #include "time.h"
+#include "gl/glu.h"
 
 GLPanel::GLPanel(QWidget *parent) : QGLWidget(parent)
 {
