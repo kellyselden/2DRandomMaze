@@ -1,0 +1,197 @@
+<ui version="4.0" >
+ <class>GUIClass</class>
+ <widget class="QWidget" name="GUIClass" >
+  <property name="windowModality" >
+   <enum>Qt::NonModal</enum>
+  </property>
+  <property name="enabled" >
+   <bool>true</bool>
+  </property>
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>560</width>
+    <height>420</height>
+   </rect>
+  </property>
+  <property name="sizePolicy" >
+   <sizepolicy vsizetype="Preferred" hsizetype="Preferred" >
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize" >
+   <size>
+    <width>560</width>
+    <height>420</height>
+   </size>
+  </property>
+  <property name="maximumSize" >
+   <size>
+    <width>560</width>
+    <height>420</height>
+   </size>
+  </property>
+  <property name="windowTitle" >
+   <string>GUI</string>
+  </property>
+  <widget class="GLPanel" native="1" name="glWin" >
+   <property name="geometry" >
+    <rect>
+     <x>9</x>
+     <y>9</y>
+     <width>401</width>
+     <height>402</height>
+    </rect>
+   </property>
+   <property name="sizePolicy" >
+    <sizepolicy vsizetype="Expanding" hsizetype="Expanding" >
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize" >
+    <size>
+     <width>0</width>
+     <height>0</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QWidget" name="" >
+   <property name="geometry" >
+    <rect>
+     <x>420</x>
+     <y>12</y>
+     <width>131</width>
+     <height>401</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout" >
+    <item>
+     <widget class="QLabel" name="rowsLabel" >
+      <property name="text" >
+       <string>Rows: xxx</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QSlider" name="rowSlider" >
+      <property name="sizePolicy" >
+       <sizepolicy vsizetype="Fixed" hsizetype="Preferred" >
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimum" >
+       <number>1</number>
+      </property>
+      <property name="maximum" >
+       <number>999</number>
+      </property>
+      <property name="value" >
+       <number>1</number>
+      </property>
+      <property name="orientation" >
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="columnsLabel" >
+      <property name="text" >
+       <string>Columns: xxx</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QSlider" name="columnSlider" >
+      <property name="sizePolicy" >
+       <sizepolicy vsizetype="Fixed" hsizetype="Preferred" >
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimum" >
+       <number>1</number>
+      </property>
+      <property name="maximum" >
+       <number>999</number>
+      </property>
+      <property name="value" >
+       <number>1</number>
+      </property>
+      <property name="orientation" >
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QRadioButton" name="randomPath" >
+      <property name="text" >
+       <string>Random Path</string>
+      </property>
+      <property name="checked" >
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QRadioButton" name="uniquePath" >
+      <property name="text" >
+       <string>Unique Path</string>
+      </property>
+      <property name="checked" >
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QCheckBox" name="showRandomPath" >
+      <property name="text" >
+       <string>Show Random Path</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QCheckBox" name="showShortestPath" >
+      <property name="text" >
+       <string>Show Shortest Path</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QCheckBox" name="animate" >
+      <property name="text" >
+       <string>Animate</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <spacer name="verticalSpacer" >
+      <property name="orientation" >
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0" >
+       <size>
+        <width>123</width>
+        <height>163</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11" />
+ <customwidgets>
+  <customwidget>
+   <class>GLPanel</class>
+   <extends>QWidget</extends>
+   <header>GLPanel.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
